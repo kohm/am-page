@@ -36,6 +36,12 @@ h2 a, h2 a:active, h2 a:visited{
 h2 a:hover {
   color:#1eafe4;}
 
+p a, p a:active, p a:visited{
+  color:#FC0;
+}
+p a:hover {
+  color:#1eafe4;}
+
 div,footer{
   display:block;
   text-align: right;
