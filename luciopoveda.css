@@ -33,6 +33,7 @@ h2{
 h2 a, h2 a:active, h2 a:visited{
   color:#60ccf3;
   vertical-align: middle;
+  margin-left: 20px;
 }
 h2 a:hover {
   color:#1eafe4;}
