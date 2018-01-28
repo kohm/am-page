@@ -1,12 +1,17 @@
+html {
+  height: 100%;
+}
+
 body {
   padding: 60px 100px;
   margin: 0;
   color: #888;
+  background-image: url("./assets/img/IMG_1474 (1).jpg");
   background-color: #222;
-  background-repeat: repeat;
-  -webkit-background-size: 3px 3px;
-  background-size: 3px 3px;
+  background-repeat: no-repeat;
   background-position: top left;
+  background-size: cover;
+  background-position-y: 100%;
   font-family: 'Lato', sans-serif;
   -webkit-transition: font-size .5s ease;
   -moz-transition: font-size .5s ease;
@@ -54,12 +59,12 @@ p a:hover {
   color: #1eafe4;
 }
 
-div, footer {
+div, .footer {
   display: block;
   text-align: right;
 }
 
-footer a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
 
