@@ -1,8 +1,8 @@
 body {
   padding: 60px 100px;
   margin: 0;
-  color: #888;
-  background-color: #222;
+  color: #FFFFFF;
+  background-color: #263941;
   background-repeat: repeat;
   -webkit-background-size: 3px 3px;
   background-size: 3px 3px;
@@ -31,7 +31,7 @@ h2 {
   font-family: 'Lato', sans-serif;
   font-size: 70px;
   text-align: right;
-  color: #777;
+  color: #FFFFFF;
   line-height: 110%;
   margin: 0;
 }
@@ -47,7 +47,7 @@ h2 a:hover {
 }
 
 p a, p a:active, p a:visited {
-  color: #FC0;
+  color: #ee2b2c;
 }
 
 p a:hover {
@@ -86,7 +86,7 @@ li {
 }
 
 li a, li a:active, li a:visited {
-  color: #888;
+  color: #FFFFFF;
 }
 
 li a:hover {
