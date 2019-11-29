@@ -93,21 +93,4 @@ a:hover {
   }
 }
 
-.glitch {
-  animation-name: text-glitch;
-  animation-duration: 300ms;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-}
-
-@keyframes text-glitch {
-  0% {
-    clip-path: polygon(0% 70%, 0% 100%, 100% 100%, 100% 70%);
-    transform: translateX(-15px);
-  }
-  to {
-    transform: translate(0);
-  }
-}
-
 /*# sourceMappingURL=luciopoveda.css.map */
