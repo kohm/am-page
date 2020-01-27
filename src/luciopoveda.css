@@ -72,12 +72,17 @@ a:hover {
 .main {
   padding: 0 1.5rem;
   height: 100%;
+  transition: opacity ease-out 300ms;
 }
 @media (min-width: 968px) {
   .main {
     max-width: 81.25rem;
     margin: 0 auto;
   }
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .card {

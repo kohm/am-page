@@ -82,10 +82,16 @@ a {
 .main {
     padding: 0 rem-calc(24);
     height: 100%;
+    transition: opacity ease-out 300ms;
+
     @media (min-width: 968px) {
         max-width: rem-calc(1300);
         margin: 0 auto;
     }
+}
+
+.hidden {
+    opacity: 0;
 }
 
 .card {
@@ -102,30 +108,4 @@ a {
 
 @media (max-width: 1000px) {
 
-}
-
-.glitch {
-    animation-name: text-glitch;
-    animation-duration: 300ms;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-}
-
-@keyframes text-glitch {
-    0% {
-        clip-path: polygon(0% 70%, 0% 100%, 100% 100%, 100% 70%);
-        transform: translateX(-15px);
-    }
-    40% {
-
-    }
-    60% {
-
-    }
-    80% {
-
-    }
-    to {
-        transform: translate(0)
-    }
 }
