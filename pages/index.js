@@ -20,9 +20,25 @@ export default function Index() {
 
   return (
     <main className="center">
-      <div className="quote">{quote}</div>
-      {author && <span className="author">- {author}</span>}
-
+      <div role="main" className="main hidden">
+        <div className="card">
+          <h1>Lucio Poveda Bertos</h1>
+          <h2>ARGENTINEAN INNOVATIVE DEVELOPER LIVING IN SPAIN</h2>
+          <footer>
+            <ul>
+              <li>
+                <a href="https://twitter.com/luciopoveda" title="Twitter" target="_blank">Twitter</a>
+              </li>
+              <li>
+                <a href="https://ar.linkedin.com/in/luciopoveda" title="LinkedIn" target="_blank">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://github.com/kohm/" title="GitHub">GitHub</a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </div>
       <style jsx>{`
         main {
           width: 90%;

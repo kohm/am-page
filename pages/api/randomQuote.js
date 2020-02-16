@@ -1,6 +1,5 @@
 import allQuotes from '../../quotes.json';
 
-
 export default (req, res) => {
   const { author } = req.query;
   let quotes = allQuotes;
