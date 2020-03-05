@@ -1,23 +1,21 @@
-import React from 'react'
-import Card from "../components/content/Card";
+import React from 'react';
 import Meta from "../components/SEO/Meta";
 import ResponsiveContainer from "../components/layout/ResponsiveContainer";
+import Calculator from "../components/Calculator";
 import Theme from "../context/Theme";
 
-const Home = () => {
+const DoughCalculator = () => {
   return (
     <div>
       <Meta/>
       <Theme>
         <ResponsiveContainer>
-          <main className="card">
-            <Card/>
-          </main>
+          <Calculator/>
         </ResponsiveContainer>
       </Theme>
     </div>
-  )
+
+  );
 };
 
-
-export default Home
+export default DoughCalculator;

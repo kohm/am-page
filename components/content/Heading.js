@@ -15,7 +15,6 @@ const Heading = (props) => {
       { /*language=SCSS*/}
       <style jsx>{`
           h1, h2 {
-              color: #1b1b1b;
               font-weight: lighter;
               margin: 0 0 16px;
           }

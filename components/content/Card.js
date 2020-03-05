@@ -36,7 +36,7 @@ const Card = () => {
           }
 
           a {
-              color: #1b1b1b;
+              color: inherit;
               display: inline-block;
               font-family: 'Nunito Sans', sans-serif;
               font-size: 16px;
@@ -46,7 +46,7 @@ const Card = () => {
           a:active,
           a:focus,
           a:visited {
-              color: #1b1b1b;
+              color: inherit;
               text-decoration: none;
           }
 
