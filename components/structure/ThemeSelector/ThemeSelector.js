@@ -1,7 +1,8 @@
 import React, {useContext, useEffect, useState} from 'react';
-import themeDark from "../../styles/themes/dark";
-import themeLight from "../../styles/themes/light";
-import {ThemeContext} from "../../context/Theme";
+import themeDark from "../../../styles/themes/dark";
+import themeLight from "../../../styles/themes/light";
+import {ThemeContext} from "../../../context/Theme";
+import {button} from './styles';
 
 export const ThemeSelector = () => {
   const [selectedTheme, setSelectedTheme] = useState('themeLight');
@@ -42,53 +43,15 @@ export const ThemeSelector = () => {
         <span className="cover"/>
       </button>
       { /*language=SCSS*/}
+      <style jsx>{button}</style>
       <style jsx>{`
-          .theme-selector {
-              left: 50%;
-              position: absolute;
-              top: 50px;
-              transform: translate(-50%, -50%);
-          }
-          
-          button {
-            background-color: transparent;
-            border: none;
-            padding: 0;
-          }
-
-          button:active,
-          button:focus {
-              outline: none;
-          }
-
-          button:hover {
-              cursor: pointer;
-          }
-          
-          .shape,
-          .cover {
-            display: block;
-          }
-          
-          .shape {
-              background-color: ${theme.colors.contrast};
-              border-radius: 50%;
-              font-size: 0;
-              height: 30px;
-              color: transparent;
-              width: 30px;
-          }
-          
-          .cover {
+        .shape {
+            background-color: ${theme.colors.contrast};
+        }
+    
+        .cover {
             background-color: ${theme.colors.background};
-            border-radius: 50%;
-            color: transparent;
-            height: 27px;
-            left: 10px;
-            position: absolute;
-            top: -5px;
-            width: 27px;
-          }
+        }
       `}</style>
     </div>
   );

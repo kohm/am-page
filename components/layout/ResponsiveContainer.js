@@ -43,6 +43,10 @@ const ResponsiveContainer = (props) => {
                 width: 700px;
             }
         }
+        a,
+        button {
+            -webkit-tap-highlight-color: transparent;
+        }
     `}</style>
     </div>
   );
