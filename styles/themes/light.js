@@ -4,10 +4,11 @@ export default {
     sans: 'Nunito Sans, sans'
   },
   colors: {
-    text: '#1b1b1b',
     background: '#ffffff',
+    border: '#1b1b1b',
+    contrast: '#1b1b1b',
     link: '#1b1b1b',
     linkHover: '#1b1b1b',
-    border: '#1b1b1b'
+    text: '#1b1b1b'
   }
 };
