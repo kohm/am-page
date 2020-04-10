@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from "../components/content/Card";
 import Meta from "../components/SEO/Meta";
-import ResponsiveContainer from "../components/layout/ResponsiveContainer";
+import ResponsiveContainer from "../components/layout/ResponsiveContainer/ResponsiveContainer";
 import Theme from "../context/Theme";
 
 const Home = () => {

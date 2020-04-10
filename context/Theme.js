@@ -10,7 +10,7 @@ const Theme = (props) => {
 
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
-      <ThemeSelector/>
+      {/*<ThemeSelector/>*/}
       {children}
     </ThemeContext.Provider>
   );
