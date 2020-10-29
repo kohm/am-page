@@ -29,6 +29,7 @@ const ResponsiveContainer = (props) => {
     body {
       background-color: ${theme.colors.background};
       color: ${theme.colors.text};
+      margin: 0;
       transition-duration: 150ms;
       transition-property: background-color, color;
     }

@@ -1,12 +1,12 @@
-import React from 'react';
-import Input from "../form/Input";
+import * as React from 'react';
+import Input from "../shared/form/input/Input";
 
 
 const Calculator = () => {
   return (
     <div>
       <h1>Dough</h1>
-      <Input label={'Presets'}/>
+      <Input label={'Label'}/>
     </div>
   );
 };

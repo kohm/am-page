@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import themeLight from "../styles/themes/light";
-import {ThemeSelector} from "../components/structure/ThemeSelector/ThemeSelector";
+import {ThemeSelector} from "@components/structure/ThemeSelector/ThemeSelector";
 
 export const ThemeContext = React.createContext(themeLight);
 
