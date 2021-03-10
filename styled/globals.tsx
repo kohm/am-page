@@ -10,21 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     
     body {
       background-color: #FFFFFF;
-      color: green;
-    }
-    
-    main {
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: calc(100% - 48px);
-    }
-    
-    @media (min-width: 968px) {
-      main {
-        width: 700px;
-      }
+      color: #1b1b1b;
     }
     a,
     button {

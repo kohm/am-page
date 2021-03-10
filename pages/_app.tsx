@@ -6,11 +6,11 @@ import {ThemeProvider} from "styled-components";
 
 export default function App({Component, pageProps}: AppProps) {
     return (
-        <>
-            <GlobalStyle/>
-            <ThemeProvider theme={defaultTheme}>
+        <ThemeProvider theme={defaultTheme}>
+            <>
+                <GlobalStyle {...pageProps}/>
                 <Component {...pageProps} />
-            </ThemeProvider>
-        </>
+            </>
+        </ThemeProvider>
     )
 }

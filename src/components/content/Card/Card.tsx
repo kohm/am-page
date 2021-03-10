@@ -1,7 +1,8 @@
 import React from 'react';
 import {animated, useSpring} from 'react-spring';
-import {Heading} from "../Heading/Heading";
+import {Heading} from "@components/shared/Heading/Heading";
 import {StyledDiv} from "./styles";
+import {Link} from "@components/shared/Link/Link";
 
 const Card = () => {
     const props = useSpring({opacity: 1, from: {opacity: 0}});
@@ -13,13 +14,13 @@ const Card = () => {
                 <footer>
                     <ul>
                         <li>
-                            <a href="https://twitter.com/luciopoveda" title="Twitter" target="_blank">Twitter</a>
+                            <Link label={'Twitter'} href={'https://twitter.com/luciopoveda'} />
                         </li>
                         <li>
-                            <a href="https://ar.linkedin.com/in/luciopoveda" title="LinkedIn" target="_blank">LinkedIn</a>
+                            <Link label={'LinkedIn'} href={'https://ar.linkedin.com/in/luciopoveda'} />
                         </li>
                         <li>
-                            <a href="https://github.com/kohm/" title="GitHub">GitHub</a>
+                            <Link label={'GitHub'} href={'https://github.com/kohm/'} />
                         </li>
                     </ul>
                 </footer>
