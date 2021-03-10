@@ -1,19 +1,16 @@
-/* styles.js */
-import css from 'styled-jsx/css'
+import {createGlobalStyle} from "styled-components";
+import {normalize} from 'styled-normalize'
 
-// Scoped styles
-{ /*language=SCSS*/
-}
 
-export function applyTheme(theme) {
-  return css.global`
+export const GlobalStyle = createGlobalStyle`
+    ${normalize}
     html, body {
         height: 100%;
     }
     
     body {
-      background-color: ${theme.colors.background};
-      color: ${theme.colors.text};
+      background-color: #FFFFFF;
+      color: green;
     }
     
     main {
@@ -32,5 +29,8 @@ export function applyTheme(theme) {
     a,
     button {
         -webkit-tap-highlight-color: transparent;
-    }`;
-}
+    }
+    * {
+        margin: 0;
+    }
+`

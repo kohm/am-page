@@ -1,22 +1,19 @@
 import React from 'react'
-import Card from "../components/content/Card";
-import Meta from "../components/SEO/Meta";
-import ResponsiveContainer from "../components/layout/ResponsiveContainer/ResponsiveContainer";
-import Theme from "../context/Theme";
+import Card from "../src/components/shared/Card/Card";
+import Meta from "../src/components/SEO/Meta";
+import ResponsiveContainer from "../src/components/layout/ResponsiveContainer/ResponsiveContainer";
 
 const Home = () => {
-  return (
-    <>
-      <Meta/>
-      <Theme>
-        <ResponsiveContainer>
-          <main className="card">
-            <Card/>
-          </main>
-        </ResponsiveContainer>
-      </Theme>
-    </>
-  )
+    return (
+        <>
+            <Meta/>
+            <ResponsiveContainer>
+                <main>
+                    <Card/>
+                </main>
+            </ResponsiveContainer>
+        </>
+    )
 };
 
 

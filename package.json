@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node_modules/.bin/next",
+    "build": "node_modules/.bin/next build",
+    "start": "node_modules/.bin/next start",
+    "type-check": "node_modules/.bin/tsc",
     "lint": "eslint . --ext .ts",
     "test": "jest",
     "test:watch": "jest — watch",
@@ -18,17 +19,24 @@
     }
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^3.0.1",
-    "next": "^10.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
+    "next": "latest",
     "react": "^17.0.1",
-    "react-dom": "16.12.0",
+    "react-dom": "^17.0.1",
     "react-spring": "^8.0.27",
-    "styled-jsx": "latest"
+    "styled-components": "^5.2.1",
+    "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^25.2.3",
+    "@types/node": "^12.12.21",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@types/styled-components": "^5.1.7",
     "babel-core": "^6.26.3",
     "babel-jest": "^26.0.1",
     "babel-plugin-module-resolver": "^4.0.0",
@@ -44,6 +52,6 @@
     "eslint-plugin-react-hooks": "^2.5.0",
     "jest": "^26.0.1",
     "ts-jest": "^26.0.0",
-    "typescript": "^3.9.3"
+    "typescript": "4.0"
   }
 }
