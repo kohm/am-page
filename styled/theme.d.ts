@@ -7,6 +7,19 @@ interface Palette {
 declare module 'styled-components' {
     export interface DefaultTheme {
         borderRadius: string
+        typography: {
+            family: {
+                headings: string
+                body: string
+            },
+            size: {
+                xl: string
+                l: string
+                md: string
+                sm: string
+                xs: string
+            }
+        },
         palette: {
             common: {
                 black: string

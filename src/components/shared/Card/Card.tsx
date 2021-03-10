@@ -1,5 +1,4 @@
 import React from 'react';
-import Headingss from "../../content/Heading";
 import {animated, useSpring} from 'react-spring';
 import {Heading} from "../Heading/Heading";
 import {StyledDiv} from "./styles";
@@ -9,9 +8,8 @@ const Card = () => {
     return (
         <animated.div style={props}>
             <StyledDiv>
-                <Headingss level={1} text={'Lucio Poveda Bertos'}/>
-                <Headingss level={2} text={'ARGENTINEAN INNOVATIVE DEVELOPER LIVING IN SPAIN'}/>
-                <Heading text='jelou' level={4}/>
+                <Heading text={'Lucio Poveda Bertos'} level={1}/>
+                <Heading text={'ARGENTINEAN INNOVATIVE DEVELOPER LIVING IN SPAIN'} level={2}/>
                 <footer>
                     <ul>
                         <li>

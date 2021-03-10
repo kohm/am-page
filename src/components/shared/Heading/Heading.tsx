@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {StyledHeading} from "./styles";
+import {StyledHeading1, StyledHeading2} from "./styles";
 
 type Props = {
     text: string
-    level?: 1 | 2 | 3 | 4
+    level?: 1 | 2
 };
 
 export const Heading = (props: Props) => {
@@ -11,30 +11,17 @@ export const Heading = (props: Props) => {
     return (
         <>
             {level === 1 &&
-            <StyledHeading
+            <StyledHeading1
                 as={`h1`}>
                 {text}
-            </StyledHeading>
+            </StyledHeading1>
             }
             {level === 2 &&
-            <StyledHeading
+            <StyledHeading2
                 as={`h2`}>
                 {text}
-            </StyledHeading>
+            </StyledHeading2>
             }
-            {level === 3 &&
-            <StyledHeading
-                as={`h3`}>
-                {text}
-            </StyledHeading>
-            }
-            {level === 4 &&
-            <StyledHeading
-                as={`h4`}>
-                {text}
-            </StyledHeading>
-            }
-
         </>
     );
 };
