@@ -1,0 +1,11 @@
+{
+  "eslint.workingDirectories": [{ "directory": "./" }],
+  "prettier.configPath": ".prettierrc.json",
+  "tailwindCSS.experimental.classRegex": [],
+  "tailwindCSS.emmetCompletions": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.validate": false
+}
